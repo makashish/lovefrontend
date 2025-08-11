@@ -1,0 +1,102 @@
+.page {
+  background-color: #ffe4e9;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px; /* Added padding to avoid clipping on small screens */
+  overflow-y: auto; /* Allow scroll if content overflows */
+}
+
+.form-container {
+  background-color: #ffc9d6;
+  padding: 30px;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 450px; /* Slightly increased for longer text */
+  text-align: center;
+  box-shadow: 0px 0px 20px rgba(255, 0, 70, 0.2);
+}
+
+.heart-img {
+  width: 80px;
+  margin-bottom: 20px;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.mode-buttons button {
+  margin: 0 5px;
+  padding: 10px 15px;
+  border: none;
+  background-color: #f89fb3;
+  color: white;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.mode-buttons .active {
+  background-color: #e6004c;
+  transform: scale(1.1);
+}
+
+.love-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.love-form input {
+  padding: 10px;
+  border: none;
+  border-radius: 8px;
+  background-color: white;
+  color: #e6004c;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+}
+
+.submit-btn {
+  background-color: #e6004c;
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  border: none;
+  border-radius: 12px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  filter: brightness(1.1);
+}
+
+.result-box {
+  background-color: white;
+  margin-top: 25px;
+  padding: 15px;
+  border-radius: 12px;
+  text-align: center;
+  color: #d70040;
+  max-height: 300px; /* Limit height */
+  overflow-y: auto; /* Add scroll if too long */
+}
+
+.result-box .desc {
+  font-style: italic;
+  color: gray;
+  white-space: pre-wrap; /* Preserve line breaks from backend */
+}
+
+.error {
+  color: red;
+  font-weight: bold;
+}
