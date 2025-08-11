@@ -25,7 +25,7 @@ const LoveForm = () => {
 
   // Load config.json on start
   useEffect(() => {
-    fetch("/config.json")
+    fetch("./config.json")
       .then(res => res.json())
       .then(data => {
         API_BASE = data.API_BASE_URL;
