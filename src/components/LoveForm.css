@@ -15,7 +15,7 @@
   width: 100%;
   max-width: 450px; /* Slightly increased for longer text */
   text-align: center;
-  box-shadow: 0px 0px 20px rgba(255, 0, 70, 0.2);
+  box-shadow: 0px 0px 20px rgba(74, 16, 168, 0.2);
 }
 
 .heart-img {
@@ -85,7 +85,7 @@
   padding: 15px;
   border-radius: 12px;
   text-align: center;
-  color: #d70040;
+  color: #40cf07;
   max-height: 300px; /* Limit height */
   overflow-y: auto; /* Add scroll if too long */
 }

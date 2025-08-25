@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from "react";
+  import React, { useState, useEffect } from "react";
 import axios from "axios";
 import "./LoveForm.css";
-import heart from "../assets/heart.png";
+import heart from "../assets/heart.png";  
 
 let API_BASE = null;
 
@@ -25,7 +25,7 @@ const LoveForm = () => {
 
   // Load config.json on start
   useEffect(() => {
-    fetch("./config.json")
+    fetch(`${import.meta.env.BASE_URL}config.json`)
       .then(res => res.json())
       .then(data => {
         API_BASE = data.API_BASE_URL;
